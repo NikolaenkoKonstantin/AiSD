@@ -23,8 +23,9 @@ void makeArray()
     E.show();
 
     int power = (A.power() + B.power() + C.power() + D.power() + E.power()) / 5;
-    double time = (end - begin) * 0.017;
-    cout << "\nMiddle power = " << power << "\nTicks = " << end - begin << "/1000000 ticks/raz" << "\nTime = " << time << " sec" << endl;
+    float time = (float)(end - begin) / CLOCKS_PER_SEC;
+    cout << "\nMiddle power = " << power << "\nTicks = " << end - begin << "/1000000 ticks/raz" << "\nTime = ";
+    printf("%.3f", time);
 }
 
 //WORKING WITH A LIST
@@ -49,8 +50,9 @@ void makeList()
     E.show();
 
     int power = (A.power() + B.power() + C.power() + D.power() + E.power()) / 5;
-    double time = (end - begin) * 0.017;
-    cout << "\nMiddle power = " << power << "\nTicks = " << end - begin << "/1000000 ticks/raz" << "\nTime = " << time << " sec" << endl;
+    float time = (float)(end - begin) / CLOCKS_PER_SEC;
+    cout << "\nMiddle power = " << power << "\nTicks = " << end - begin << "/1000000 ticks/raz" << "\nTime = ";
+    printf("%.3f", time);
 }
 
 //WORKING WITH A BINARY
@@ -74,8 +76,9 @@ void makeBinary()
     bE.show();
 
     int power = (bA.power() + bB.power() + bC.power() + bD.power() + bE.power()) / 5;
-    double time = (end - begin) * 0.017;
-    cout << "\nMiddle power = " << power << "\nTicks = " << end - begin << "/1000000 ticks/raz" << "\nTime = " << time << " sec" << endl;
+    float time = (float)(end - begin) / CLOCKS_PER_SEC;
+    cout << "\nMiddle power = " << power << "\nTicks = " << end - begin << "/1000000 ticks/raz" << "\nTime = ";
+    printf("%.3f", time);
 }
 
 //WORKING WITH A MACHIN WORD
@@ -98,6 +101,7 @@ void makeMachWord()
     mE.show();
 
     int power = (mA.power() + mB.power() + mC.power() + mD.power() + mE.power()) / 5;
-    double time = (end - begin) * 0.017;
-    cout << "\nMiddle power = " << power << "\nTicks = " << end - begin << "/1000000 ticks/raz" << "\nTime = " << time << " sec" << endl;
+    float time = (float)(end - begin) / CLOCKS_PER_SEC;
+    cout << "\nMiddle power = " << power << "\nTicks = " << end - begin << "/1000000 ticks/raz" << "\nTime = ";
+    printf("%.3f", time);
 }
