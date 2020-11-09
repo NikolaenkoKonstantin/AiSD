@@ -5,6 +5,7 @@
 #include "machWord.h"
 #include <ctime>
 #include <iostream>
+#include <time.h>
 
 void makeArray();
 
